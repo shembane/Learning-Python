@@ -1,5 +1,13 @@
 # Introduction to Python
 
+## Useful Python references
+
+* [Learn Python the Hard Way - Read for Free](https://learnpythonthehardway.org/book/)
+* [BeginnersGuide at the Python Wiki](https://wiki.python.org/moin/BeginnersGuide)
+* [Python Tips](https://pythontips.com)
+* [Python Resources at Python Tips](https://pythontips.com/python-resources/), especially [Python Resources](https://pythontips.com/python-resources/#beginners-delight)
+* [The Hitchhiker’s Guide to Python! — The Hitchhiker's Guide to Python](http://docs.python-guide.org/en/latest/)
+
 ## Comments
 
 Comments have two purposes:
@@ -155,6 +163,10 @@ From the book (page 77):
 >You give a file a command by using the . (dot or period), the name of the command, and parameters. Just like with open and raw_input. The difference is that txt.read() says, ”Hey txt! Do your read command with no parameters!”
 
 Commands are also called ”functions” and ”methods".
+
+Great explanation of the `open` command at Python Tips titled "[The open function explained](https://pythontips.com/2014/01/15/the-open-function-explained/)".
+
+>Let’s start with the basics: The return of open is a file handle, given out from the operating system to your Python application. You will want to return this file handle once you’re finished with the file, if only so that your application won’t reach the limit of the number of open file handle it can have at once.
 
 ## Code writing best practices
 
