@@ -146,8 +146,15 @@ it. In the exercises you will get to play with this more and see what happens.
 >
 >After that we just print them out like normal.
 
-
 Note: Another word for "modules" is "features". Programmers also call them "libraries".
+
+## Commands
+
+From the book (page 77):
+
+>You give a file a command by using the . (dot or period), the name of the command, and parameters. Just like with open and raw_input. The difference is that txt.read() says, ”Hey txt! Do your read command with no parameters!”
+
+Commands are also called ”functions” and ”methods".
 
 ## Code writing best practices
 
