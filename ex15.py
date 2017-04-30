@@ -1,16 +1,15 @@
 from sys import argv
-# This associates the argv function with the script and the filename variable #
+#This next line informs the argv function by defining which file to use
 script, filename = argv
-# The open command targets the filename variable in conjunction with txt #
+# This next line opens the file I named when executing the script
 txt = open(filename)
-# Line 7 adds the filename I specified in the execution command into the output #
+# These next two lines tell me which file was opened and then prints the contents of the file
 print "Here's your file %r:" % filename
 print txt.read()
-
-# This next part prompts to type the filename so it can print the text again #
+#In the next two lines, the script asks me to tell it which file to open instead of using the initial argv import method
 print "Type the filename again:"
 file_again = raw_input("> ")
-# This uses another variable txt_again to use with a secondary process - opening the file #
+# In this next line, the script opens the file I specified at the prompt.
 txt_again = open(file_again)
-# This then prints the same text file but in a secondary process #
+# In this next line, the script prints the contents of the file I named at the prompt.
 print txt_again.read()
