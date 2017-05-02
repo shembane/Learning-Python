@@ -168,6 +168,41 @@ Great explanation of the `open` command at Python Tips titled "[The open functio
 
 >Let’s start with the basics: The return of open is a file handle, given out from the operating system to your Python application. You will want to return this file handle once you’re finished with the file, if only so that your application won’t reach the limit of the number of open file handle it can have at once.
 
+### Commands to remember
+
+* `close` – Closes the file. Like File->Save.. in your editor.
+* `read` – Reads the contents of the file. You can assign the result to a variable.
+* `readline` – Reads just one line of a text file.
+* `truncate` – Empties the file. Watch out if you care about the file.
+* `write(’stuff’)` – Writes ”stuff” to the file.
+
+Useful article about the `open` command and opening text files: "[Reading and Writing Files in Python](http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python)".
+
+Also take a look at "[7. Input and Output — Python 2.7.13 documentation](https://docs.python.org/2/tutorial/inputoutput.html#reading-and-writing-files)". It is a bit dense but has a lot of formatting information.
+
+Modifiers for file modes (from the book, page 82):
+
+> **What modifiers to the file modes can I use?** The most important one to know for now is the + modifier, so you can do ’w+’, ’r+’, and ’a+’. This will open the file in both read and write mode, and depending on the character use position the file in different ways.
+
+### Simplifying commands with strings
+
+In exercise 16, the original code used the following to write lines from the user to a text file:
+
+```
+target.write(line1)
+target.write("\n")
+target.write(line2)
+target.write("\n")
+target.write(line3)
+target.write("\n")
+```
+
+One of the study drills called for a simplification of these lines of the code. This simplified string works:
+
+```
+target.write("%s\n%s\n%s\n" % (line1, line2, line3))
+```
+
 ## Code writing best practices
 
 * Try keep lines to 80 characters in length (exercise 7 comments).
