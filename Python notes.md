@@ -108,6 +108,10 @@ When using the ``\n`` syntax to create new lines, remember that using it with a 
 
 >**Why do the \n newlines not work when I use %r?** That’s how %r formatting works; it prints it the way you wrote it (or close to it). It’s the ”raw” format for debugging.
 
+### A note about the `import` statement
+
+Python notes: "[6. Simple statements — Python 2.7.13 documentation](https://docs.python.org/2.7/reference/simple_stmts.html#the-import-statement)"
+
 ### Escape sequences
 
 From the book:

@@ -1,0 +1,1 @@
+Another attempt at creating a short script to copy text.
