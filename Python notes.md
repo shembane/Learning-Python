@@ -160,7 +160,7 @@ it. In the exercises you will get to play with this more and see what happens.
 
 Note: Another word for "modules" is "features". Programmers also call them "libraries".
 
-## Commands
+## Commands (really functions)
 
 From the book (page 77):
 
@@ -172,7 +172,7 @@ Great explanation of the `open` command at Python Tips titled "[The open functio
 
 >Let’s start with the basics: The return of open is a file handle, given out from the operating system to your Python application. You will want to return this file handle once you’re finished with the file, if only so that your application won’t reach the limit of the number of open file handle it can have at once.
 
-### Commands to remember
+### Commands (or functions) to remember
 
 * `close` – Closes the file. Like File->Save.. in your editor.
 * `read` – Reads the contents of the file. You can assign the result to a variable.
@@ -206,6 +206,57 @@ One of the study drills called for a simplification of these lines of the code. 
 ```
 target.write("%s\n%s\n%s\n" % (line1, line2, line3))
 ```
+
+## Functions
+
+Functions do three things:
+
+* They name pieces of code the way variables name strings and numbers.
+* They take arguments the way your scripts take `argv`.
+* Using 1 and 2 they let you make your own "mini-scripts" or "tiny commands."
+
+You can create a function by using the word `def` in Python.
+
+### About `def` and `args`
+
+From exercise 18:
+
+```
+def print_two(*args):
+    arg1, arg2 = args
+    print "arg1: %r, arg2: %r" % (arg1, arg2)
+```
+
+Explanation from the book:
+
+>1. First we tell Python we want to make a function using `def` for "define".
+>2. On the same line as def we give the function a name. In this case we just called it "print_two" but it could also be "peanuts". It doesn't matter, except that your function should have a short name that says what it does.
+>3. Then we tell it we want `*args` (asterisk args) which is a lot like your `argv` parameter but for functions. This *has* to go inside () parentheses to work.
+>4. Then we end this line with a `:` colon, and start indenting.
+>5. After the colon all the lines that are indented four spaces will become attached to this name, `print_two`. Our first indented line is one that unpacks the arguments the same as with your scripts.
+>6. To demonstrate how it works we print these arguments out, just like we would in a script.
+>
+>The problem with `print_two` is that it's not the easiest way to make a function. In Python we can skip the whole unpacking arguments and just use the names we want right inside ().
+
+### Function checklists
+
+* Did you start your function definition with `def`?
+* Does your function name have only characters and `_` (underscore) characters?
+* Did you put an open parenthesis `(` right after the function name?
+* Did you put your arguments after the parenthesis `(` separated by commas?
+* Did you make each argument unique (meaning no duplicated names)?
+* Did you put a close parenthesis and a colon `):` after the arguments?
+* Did you indent all lines of code you want in the function four spaces? No more, no less.
+* Did you "end" your function by going back to writing with no indent (`dedenting` we call it)?
+
+When you run ("use" or "call") a function, check these things:
+
+* Did you call/use/run this function by typing its name?
+* Did you put the `(` character after the name to run it?
+* Did you put the values you want into the parenthesis separated by commas?
+* Did you end the function call with a `)` character?
+
+**To 'run,' 'call,' or 'use' a function all mean the same thing.**
 
 ## Code writing best practices
 
