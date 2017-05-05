@@ -258,6 +258,47 @@ When you run ("use" or "call") a function, check these things:
 
 **To 'run,' 'call,' or 'use' a function all mean the same thing.**
 
+From the book:
+
+>In a way, the arguments to a function are kind of like our = character when we make a variable. In fact, if you can use = to name something, you can usually pass it to a function as an argument.
+
+### Using `int()` with `raw_input()` in functions to get values from users
+
+Example string formats:
+
+`cheeses1 = int(raw_input("> "))`
+
+You have to store after you call `int()`. Like `cheeses1 = int(cheeses1)`
+
+Longer feedback from Stack Overflow:
+
+>`int` does not mutate the user input (a string, which is in fact immutable), but constructs an integer and then returns it.
+>
+>Since you don't assign any name to the return value, it is lost.
+>
+>Demo:
+```
+>>> user_input = raw_input('input integer > ')
+input integer > 5
+>>> type(user_input)
+<type 'str'>
+>>> input_as_int = int(user_input)
+>>> input_as_int
+5
+>>> type(input_as_int)
+<type 'int'>
+>>> type(user_input) # no change here
+<type 'str'>
+```
+
+### Understanding the `f` notation in exercise 20
+
+From the book:
+
+>**What is f in the print_all and other functions?** The `f` is a variable just like you had in other functions in Exercise 18, except this time it’s a file. A file in Python is kind of like an old tape drive on a mainframe, or maybe a DVD player. It has a ”read head,” and you can ”seek” this read head around the file to positions, then work with it there. Each time you do `f.seek(0)` you’re moving to the start of the file. Each time you do `f.readline()` you’re reading a line from the file, and moving the read head to right after the `\n` that ends that file. This will be explained more as you go on.
+
+Also read the explanation here: "[Learn Python the Hard Way ex20, how does this function work? - Stack Overflow](http://stackoverflow.com/questions/20969536/learn-python-the-hard-way-ex20-how-does-this-function-work)"
+
 ## Code writing best practices
 
 * Try keep lines to 80 characters in length (exercise 7 comments).
