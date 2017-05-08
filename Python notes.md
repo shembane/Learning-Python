@@ -15,7 +15,7 @@ Comments have two purposes:
 * Explain a function in plain language; and
 * Temporarily disable parts of a program.
 
-Comments use the octothorpe or hash - #. Here is an example of how the code is used:
+Comments use the octothorpe or hash - `#`. Here is an example of how the code is used:
 
 ```
 # A comment, this is so you can read your program later.
@@ -45,9 +45,9 @@ print "This will run."
 
 ### Questions from the book about % (modulus)
 
-`` Why is the % character a ”modulus” and not a ”percent”? Mostly that’s just how the designers chose to use that symbol. In normal writing you are correct to read it as a ”percent.” In programming this calculation is typically done with simple division and the / operator. The % modulus is a different operation that just happens to use the % symbol.
-
-How does % work? Another way to say it is, ”X divided by Y with J remaining.” For example, ”100 divided by 16 with 4 remaining.” The result of % is the J part, or the remaining part. ``
+>Why is the `%` character a ”modulus” and not a ”percent”? Mostly that’s just how the designers chose to use that symbol. In normal writing you are correct to read it as a ”percent.” In programming this calculation is typically done with simple division and the `/` operator. The `%` modulus is a different operation that just happens to use the `%` symbol.
+>
+>How does % work? Another way to say it is, ”X divided by Y with J remaining.” For example, ”100 divided by 16 with 4 remaining.” The result of `%` is the J part, or the remaining part.
 
 The order that Python applies the maths functions is "**PEMDAS** which stands
 for Parentheses Exponents Multiplication Division Addition Subtraction".
@@ -58,7 +58,7 @@ A variable is a name for something.
 
 ### Question from the book about "=" and "=="
 
-> What is the difference between = (single-equal) and == (double-equal)? The = (single-equal) assigns the value on the right to a variable on the left. The == (double-equal) tests if two things have the same value
+> What is the difference between `=` (single-equal) and `==` (double-equal)? The `=` (single-equal) assigns the value on the right to a variable on the left. The `==` (double-equal) tests if two things have the same value
 
 ## Strings
 
@@ -290,6 +290,12 @@ input integer > 5
 >>> type(user_input) # no change here
 <type 'str'>
 ```
+
+### Another note about `raw_input` and entering values into a formula
+
+This relates to exercise 21. The question was about using `raw_input` to capture values to feed into the functions.
+
+>The problem with that is then you can't enter floating point, so also try using `float(raw_input())` instead.
 
 ### Understanding the `f` notation in exercise 20
 
