@@ -6,6 +6,8 @@ Date: 2017-05-10
 
 ## Python function and symbol reference document
 
+These are functions and symbols covered so far.
+
 | **Function or symbol** | **Explanation** |
 | --- | --- |
 | `print ""` | This prints the text in the "" or '' on the screen. |
