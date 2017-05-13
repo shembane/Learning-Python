@@ -1,8 +1,8 @@
-Title:  Exercise 22 - my Python symbol reference document
-Subtitle:  |
-Project: Learning Python
-Author:  Paul Jacobson
-Date: 2017-05-10
+Title:  Exercise 22 - my Python symbol reference document  
+Subtitle:  |  
+Project: Learning Python  
+Author:  Paul Jacobson  
+Date: 2017-05-10  
 
 ## Python function and symbol reference document
 
@@ -15,6 +15,8 @@ Date: 2017-05-10
 | `%d` | Formatter |
 | `%r` | Debugging formatter |
 | `%` | Modulus |
+| `argv` | Argument variable |
+| `def` | Used to create a function |
 | *Maths functions* | *What it does?* |
 | `+` | plus |
 | `-` | minus |
@@ -43,5 +45,3 @@ Date: 2017-05-10
 | `\v` | ASCII vertical tab (VT) |
 | `\ooo` | Character with octal value ooo |
 | `\xhh` | Character with hex value hh |
-
-<!-- Continue with exercise 10 -->

@@ -31,23 +31,25 @@ print "This will run."
 
 ## Maths functions
 
-```
-* + plus
-* - minus
-* / slash
-* * asterisk
-* % percent
-* < less-than
-* > greater-than
-* <= less-than-equal
-* >= greater-than-equal
-```
+| **Function** | **Description** |
+| --- | --- |
+| `+` | plus |
+| `-` | minus |
+| `/` | slash |
+| `*` | asterisk |
+| `%` | percent |
+| `<` | less-than |
+| `>` | greater-than |
+| `<=` | less-than-equal |
+| `>=` | greater-than-equal |
+| `=` | single equal |
+| `==` | double equal - to test equivalence |
 
 ### Questions from the book about % (modulus)
 
 >Why is the `%` character a ”modulus” and not a ”percent”? Mostly that’s just how the designers chose to use that symbol. In normal writing you are correct to read it as a ”percent.” In programming this calculation is typically done with simple division and the `/` operator. The `%` modulus is a different operation that just happens to use the `%` symbol.
 >
->How does % work? Another way to say it is, ”X divided by Y with J remaining.” For example, ”100 divided by 16 with 4 remaining.” The result of `%` is the J part, or the remaining part.
+>How does `%` work? Another way to say it is, ”X divided by Y with J remaining.” For example, ”100 divided by 16 with 4 remaining.” The result of `%` is the J part, or the remaining part.
 
 The order that Python applies the maths functions is "**PEMDAS** which stands
 for Parentheses Exponents Multiplication Division Addition Subtraction".
@@ -62,7 +64,7 @@ A variable is a name for something.
 
 ## Strings
 
->Every time you put ” (double-quotes) around a piece of text you have been making a string. A string is how you make something that your program might give to a human. You print strings, save strings to files, send strings to web servers, and many other things.
+>Every time you put `”` (double-quotes) around a piece of text you have been making a string. A string is how you make something that your program might give to a human. You print strings, save strings to files, send strings to web servers, and many other things.
 
 "This is a string"
 
@@ -76,21 +78,21 @@ For reference purposes: "[2.3.6.2 String Formatting Operations](https://docs.pyt
 
 ### Further explanation of strings from the book
 
->A string is usually a bit of text you want to display to someone, or ”export” out of the program you are writing. Python knows you want something to be a string when you put either ” (double-quotes) or ’(single-quotes) around the text. You saw this many times with your use of print when you put the text you want to go inside the string inside ” or ’ after the print to print the string.
+>A string is usually a bit of text you want to display to someone, or ”export” out of the program you are writing. Python knows you want something to be a string when you put either `”` (double-quotes) or `’` (single-quotes) around the text. You saw this many times with your use of print when you put the text you want to go inside the string inside `”` or `’` after the print to print the string.
 
->Strings may contain the format characters you have discovered so far. You simply put the formatted variables in the string, and then a % (percent) character, followed by the variable. The only catch is that if you want multiple formats in your string to print multiple variables, you need to put them inside ( ) (parenthesis) separated by , (commas). It’s as if you were telling me to buy you a list of items from the store and you said, ”I want milk, eggs, bread, and soup.” Only as a programmer we say, ”(milk, eggs, bread, soup).”
+>Strings may contain the format characters you have discovered so far. You simply put the formatted variables in the string, and then a `%` (percent) character, followed by the variable. The only catch is that if you want multiple formats in your string to print multiple variables, you need to put them inside `( )` (parenthesis) separated by `,` (commas). It’s as if you were telling me to buy you a list of items from the store and you said, ”I want milk, eggs, bread, and soup.” Only as a programmer we say, ”(milk, eggs, bread, soup).”
 
 Question about variables from the book:
 
-> **What does %s, %r, and %d do again?** You’ll learn more about this as you continue, but they are ”formatters.” They tell Python to take the variable on the right and put it in to replace the %s with its value.
+> **What does `%s`, `%r`, and `%d` do again?** You’ll learn more about this as you continue, but they are ”formatters.” They tell Python to take the variable on the right and put it in to replace the `%s` with its value.
 
-> **What is the difference between %r and %s?** Use the %r for debugging, since it displays the ”raw” data of the variable, but the others are used for displaying to users.
+> **What is the difference between `%r` and `%s`?** Use the `%r` for debugging, since it displays the ”raw” data of the variable, but the others are used for displaying to users.
 
 ### A note about the `formatter` attribute
 
 From "[34.1. formatter — Generic output formatting — Python 2.7.13 documentation](https://docs.python.org/2/library/formatter.html)"
 
->This module supports two interface definitions, each with multiple implementations. The formatter interface is used by the HTMLParser class of the htmllib module, and the writer interface is required by the formatter interface.
+>This module supports two interface definitions, each with multiple implementations. The formatter interface is used by the HTMLParser class of the `htmllib` module, and the writer interface is required by the formatter interface.
 >
 >Formatter objects transform an abstract flow of formatting events into specific output events on writer objects. Formatters manage several stack structures to allow various properties of a writer object to be changed and restored; writers need not be able to handle relative changes nor any sort of “change back” operation. Specific writer properties which may be controlled via formatter objects are horizontal alignment, font, and left margin indentations. A mechanism is provided which supports providing arbitrary, non-exclusive style settings to a writer as well. Additional interfaces facilitate formatting events which are not reversible, such as paragraph separation.
 >
@@ -100,13 +102,13 @@ Also check out this question and answers in Stack Overflow regarding exercise 8 
 
 >The formatter acts as a template, each `%r` acting as a place holder for the values in the tuple on the right-hand side.
 
->That's the classic format for string formatting, `print "%r" % var` will print the raw value of var, four %r expects 4 variables to be passed after the %.
+>That's the classic format for string formatting, `print "%r" % var` will print the raw value of var, four `%r` expects 4 variables to be passed after the `%`.
 
 >formatter is a string. so, the first line is the same as: `"%r %r %r %r" % (1, 2, 3, 4)`
 
 When using the ``\n`` syntax to create new lines, remember that using it with a `%r` formatter changes its behaviour:
 
->**Why do the \n newlines not work when I use %r?** That’s how %r formatting works; it prints it the way you wrote it (or close to it). It’s the ”raw” format for debugging.
+>**Why do the `\n` newlines not work when I use `%r`?** That’s how `%r` formatting works; it prints it the way you wrote it (or close to it). It’s the ”raw” format for debugging.
 
 ### A note about the `import` statement
 
@@ -116,35 +118,34 @@ Python notes: "[6. Simple statements — Python 2.7.13 documentation](https://do
 
 From the book:
 
->This \ (backslash) character encodes difficult-to-type characters into a  string. There are various ”escape sequences” available for different characters you might want to use. We’ll try a few of these sequences so you can see what I mean.
+>This `\` (backslash) character encodes difficult-to-type characters into a  string. There are various ”escape sequences” available for different characters you might want to use. We’ll try a few of these sequences so you can see what I mean.
 >
->An important escape sequence is to escape a single-quote ’ or double-quote ”. Imagine you have a string that uses double-quotes and you want to put a double-quote inside the string. If you write ”I ”understand” joe.” then Python will get confused because it will think the ” around ”understand” actually ends the string. You need a way to tell Python that the ” inside the string isn’t a real doublequote.
+>An important escape sequence is to escape a single-quote `’` or double-quote `”`. Imagine you have a string that uses double-quotes and you want to put a double-quote inside the string. If you write ”I ”understand” joe.” then Python will get confused because it will think the `”` around ”understand” actually ends the string. You need a way to tell Python that the `”` inside the string isn’t a real doublequote.
 >
 >To solve this problem you escape double-quotes and single-quotes so Python knows to include in the string. Here’s an example:
 ```
 ” I am 6’2\” tall. ” # escape double-quote inside string
 ’ I am 6\’2” tall. ’ # escape single-quote inside string
 ```
->The second way is by using triple-quotes, which is just ””” and works like a string, but you also can put as many lines of text as you want until you type ””” again.
+>The second way is by using triple-quotes, which is just `”””` and works like a string, but you also can put as many lines of text as you want until you type `”””` again.
 
-```
-Escape    What it does.
-\\        Backslash ()
-\’        Single-quote (’)
-\”        Double-quote (”)
-\a        ASCII bell (BEL)
-\b        ASCII backspace (BS)
-\f        ASCII formfeed (FF)
-\n        ASCII linefeed (LF)
-\N{name}  Character named name in the Unicode database (Unicode only)
-\r ASCII  Carriage Return (CR)
-\t ASCII  Horizontal Tab (TAB)
-\uxxxx    Character with 16-bit hex value xxxx (Unicode only)
-\Uxxxxxxxx Character with 32-bit hex value xxxxxxxx (Unicode only)
-\v        ASCII vertical tab (VT)
-\ooo      Character with octal value ooo
-\xhh      Character with hex value hh
-```
+| Escape | What it does. |
+| --- | --- |
+| `\\` | Backslash () |
+| `\’` | Single-quote (’) |
+| `\”` | Double-quote (”) |
+| `\a` | ASCII bell (BEL) |
+| `\b` | ASCII backspace (BS) |
+| `\f` | ASCII formfeed (FF) |
+| `\n` | ASCII linefeed (LF) |
+| `\N{name}` | Character named name in the Unicode database (Unicode only) |
+| `\r` | ASCII Carriage Return (CR) |
+| `\t` | ASCII Horizontal Tab (TAB) |
+| `\uxxxx` | Character with 16-bit hex value xxxx (Unicode only) |
+| `\Uxxxxxxxx` | Character with 32-bit hex value xxxxxxxx (Unicode only) |
+| `\v` | ASCII vertical tab (VT) |
+| `\ooo` | Character with octal value ooo |
+| `\xhh` | Character with hex value hh |
 
 ### Parameters and variables
 
@@ -164,7 +165,7 @@ Note: Another word for "modules" is "features". Programmers also call them "libr
 
 From the book (page 77):
 
->You give a file a command by using the . (dot or period), the name of the command, and parameters. Just like with open and raw_input. The difference is that txt.read() says, ”Hey txt! Do your read command with no parameters!”
+>You give a file a command by using the `.` (dot or period), the name of the command, and parameters. Just like with open and raw_input. The difference is that `txt.read()` says, ”Hey txt! Do your read command with no parameters!”
 
 Commands are also called ”functions” and ”methods".
 
@@ -231,7 +232,7 @@ Explanation from the book:
 
 >1. First we tell Python we want to make a function using `def` for "define".
 >2. On the same line as def we give the function a name. In this case we just called it "print_two" but it could also be "peanuts". It doesn't matter, except that your function should have a short name that says what it does.
->3. Then we tell it we want `*args` (asterisk args) which is a lot like your `argv` parameter but for functions. This *has* to go inside () parentheses to work.
+>3. Then we tell it we want `*args` (asterisk args) which is a lot like your `argv` parameter but for functions. This *has* to go inside `()` parentheses to work.
 >4. Then we end this line with a `:` colon, and start indenting.
 >5. After the colon all the lines that are indented four spaces will become attached to this name, `print_two`. Our first indented line is one that unpacks the arguments the same as with your scripts.
 >6. To demonstrate how it works we print these arguments out, just like we would in a script.
