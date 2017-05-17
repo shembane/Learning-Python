@@ -306,6 +306,20 @@ From the book:
 
 Also read the explanation here: "[Learn Python the Hard Way ex20, how does this function work? - Stack Overflow](http://stackoverflow.com/questions/20969536/learn-python-the-hard-way-ex20-how-does-this-function-work)"
 
+### Running functions in Python in the terminal
+
+We started this in exercise 25. One of the functions was `word.pop`. This question and answer from the book discuss how it works in relation to the `words` variable:
+
+> **How can the `words.pop` function change the words variable?**
+>
+>That's a complicated question, but in this case `words` is a list, and because of that you can give it commands and it'll retain the results of those commands. This is similar to how files and many other things worked when you were working with them.
+
+The exercise also used `return` instead of `print` in some parts. Here is an explanation of the differences between the two functions:
+
+>**When should I `print` instead of `return` in a function?**
+>
+>The `return` from a function gives the line of code that called the function a result. You can think of a function as taking input through its arguments, and returning output through `return`. The `print` is *completely* unrelated to this, and only deals with printing output to the terminal.
+
 ## Code writing best practices
 
 * Try keep lines to 80 characters in length (exercise 7 comments).
