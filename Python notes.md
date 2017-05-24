@@ -377,6 +377,23 @@ The exercise also used `return` instead of `print` in some parts. Here is an exp
 | 0 == 1 | False |
 | 0 == 0 | True |
 
+### Reading Boolean logic statements
+
+Process from the book:
+
+>Whenever you see these boolean logic statements, you can solve them easily by this simple process:
+>
+>1. Find an equality test (`==` or `!=`) and replace it with its truth.
+>2. Find each `and`/`or` inside parentheses and solve those first.
+>3. Find each `not` and invert it.
+>4. Find any remaining `and`/`or` and solve it.
+>5. When you are done you should have `True` or `False`.
+
+A shortcut from the book:
+
+* Any `and` expression that has a `False` is immediately `False`.
+* Any `or` expression that has a `True` is immediately `True`.
+
 ## Code writing best practices
 
 * Try keep lines to 80 characters in length (exercise 7 comments).
